@@ -279,7 +279,7 @@
     <a href="/" id="avatar" class="rounded-circle">
       
         
-        <img src="https://chirpy-img.netlify.appassets/img/profile.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="https://chirpy-img.netlify.app/assets/img/avartar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
       
     </a>
 
@@ -653,10 +653,10 @@
 
           <em>
             
-              
-                <a href="https://github.com/cotes2020/">Cotes Chung</a>
-                
-              
+            
+            <a href="https://github.com/cotes2020/">Cotes Chung</a>
+            
+            
             
           </em>
         </span>
@@ -747,38 +747,33 @@
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        
-          <a href="/categories/blogging/">Blogging</a>,
-          <a href="/categories/tutorial/">Tutorial</a>
-      </div>
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+      <a href="/categories/blogging/">Blogging</a>,
+      <a href="/categories/tutorial/">Tutorial</a>
+    </div>
     
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/favicon/"
-            class="post-tag no-text-decoration"
-          >favicon</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a href="/tags/favicon/" class="post-tag no-text-decoration">favicon</a>
+      
+    </div>
     
 
-    <div
-      class="
+    <div class="
         post-tail-bottom
         d-flex justify-content-between align-items-center mt-5 pb-2
-      "
-    >
+      ">
       <div class="license-wrapper">
         
-          
+        
 
-          This post is licensed under 
+        This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
@@ -834,10 +829,13 @@
 
     </div>
     <!-- .post-tail-bottom -->
+    <script src="https://utteranc.es/client.js" repo="KimJeju/kimjeju.github.io"
+      issue-term="pathname" theme="github-dark" crossorigin="anonymous" async>
+      </script>
   </div>
   <!-- div.post-tail-wrapper -->
-</article>
 
+</article>
 
             
           </main>
@@ -1236,6 +1234,59 @@ H3 - ...
             
               
               <!--  The comments switcher -->
+
+  
+  <!-- https://utteranc.es/ -->
+<script
+  src="https://utteranc.es/client.js"
+  repo="KimJeju/KimJeju.github.io"
+  issue-term="pathname"
+  crossorigin="anonymous"
+  async
+></script>
+
+<script type="text/javascript">
+  (function () {
+    const origin = 'https://utteranc.es';
+    const iframe = 'iframe.utterances-frame';
+    const lightTheme = 'github-light';
+    const darkTheme = 'github-dark';
+    let initTheme = lightTheme;
+    const html = document.documentElement;
+
+    if (
+      (html.hasAttribute('data-mode') && html.getAttribute('data-mode') === 'dark') ||
+      (!html.hasAttribute('data-mode') && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      initTheme = darkTheme;
+    }
+
+    addEventListener('message', (event) => {
+      let theme;
+
+      /* credit to <https://github.com/utterance/utterances/issues/170#issuecomment-594036347> */
+      if (event.origin === origin) {
+        /* page initial */
+        theme = initTheme;
+      } else if (event.source === window && event.data && event.data.direction === ModeToggle.ID) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        theme = mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme;
+      } else {
+        return;
+      }
+
+      const message = {
+        type: 'set-theme',
+        theme: theme
+      };
+
+      const utterances = document.querySelector(iframe).contentWindow;
+      utterances.postMessage(message, origin);
+    });
+  })();
+</script>
+
 
 
             
