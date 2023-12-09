@@ -744,7 +744,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="813 words"
+  title="729 words"
 >
   <em>4 min</em> read</span>
 
@@ -768,31 +768,7 @@
 
 <hr />
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="rouge-code"><pre>package com.in28minutes.primitive.datatypes;
-
+<pre><code class="language-C#">
 public class myCharRunner {
 
 	public static void main(String[] args) {
@@ -812,7 +788,7 @@ public class myCharRunner {
 	}
 
 }
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 <h3 id="-my-char-classs"><span class="me-2">■ my Char Classs</span><a href="#-my-char-classs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
@@ -829,21 +805,7 @@ public class myCharRunner {
 
 <h3 id="클래스-및-생성자-선언"><span class="me-2">클래스 및 생성자 선언</span><a href="#클래스-및-생성자-선언" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="rouge-code"><pre>package com.in28minutes.primitive.datatypes;
-
+<pre><code class="language-C#">
 // 대문자 65 ~ 90
 
 public class myChar {
@@ -853,7 +815,7 @@ public class myChar {
 	public myChar(char ch) {
 		this.ch = ch;
 	}
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 <ul>
   <li>private char 을 선언해줌으로서 charactor형 상수 선언</li>
@@ -862,19 +824,7 @@ public class myChar {
 
 <h3 id="isvowel-메서드"><span class="me-2">isVowel 메서드</span><a href="#isvowel-메서드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre>// 리터럴 값이 모음인지를 판단
+<pre><code class="language-C#">// 리터럴 값이 모음인지를 판단
 	public boolean isVowel() {
 		// a e i o u or A E I O U
 		if(ch == 'a' || ch == 'e' || ch == 'i' ||ch ==  'o' ||ch ==  'u' ||
@@ -884,7 +834,7 @@ public class myChar {
 		else
 		return false;
 	}
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 <ul>
   <li>public boolean 으로 메서드 생성</li>
@@ -893,18 +843,7 @@ public class myChar {
 
 <h3 id="isnumber-메서드"><span class="me-2">isNumber 메서드</span><a href="#isnumber-메서드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre>	// 리터럴값의 숫자 여부 판단
+<pre><code class="language-C#">	// 리터럴값의 숫자 여부 판단
 	public boolean isNumber() {
 			for(char i = 48; i &lt;= 57; ++i ) {
 				if(this.ch == i)
@@ -913,7 +852,7 @@ public class myChar {
 		
 			return false;
 	}
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 <ul>
   <li>for문에 유니코드 값 48(0) ~ 57(0) 을 지정해 줌으로서 this.ch 즉 지역변수가 숫자값인지 판별</li>
@@ -921,18 +860,7 @@ public class myChar {
 
 <h3 id="isalparbet-메서드"><span class="me-2">isAlparbet 메서드</span><a href="#isalparbet-메서드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre>// 리터럴값의 알파벳 여부판단
+<pre><code class="language-C#">// 리터럴값의 알파벳 여부판단
 	public boolean isAlphabet() {
 		 for(char i = 65; i &lt;= 90; ++i ) 
 		 {
@@ -941,7 +869,7 @@ public class myChar {
 		 }
 		 return false;
 	}
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 <ul>
   <li>for문에 유니코드 값 65(a) ~ 57(b) 을 지정해 줌으로서 this.ch 즉 지역변수가 숫자값인지 판별</li>
@@ -950,20 +878,7 @@ public class myChar {
 
 <h3 id="printlowercasealphabets-메서드"><span class="me-2">printLowerCaseAlphabets 메서드</span><a href="#printlowercasealphabets-메서드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="rouge-code"><pre>public void printLowerCaseAlphabets() {
+<pre><code class="language-C#">public void printLowerCaseAlphabets() {
 		for(char i = 65; i &lt;= 90; ++i)
 		{ 
 			if(this.ch == i) {
@@ -974,7 +889,7 @@ public class myChar {
 			
 		}
 	}
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 <ul>
   <li>대문자 아스키 코드 포문을 돈 후에 if문 안으로 진입할 시 즉 아스키 코드가 대문자 일 시 + 32를 해줘 소문자로 변환</li>
@@ -983,18 +898,7 @@ public class myChar {
 
 <h3 id="print-uppercase-alphabets-메서드"><span class="me-2">print UpperCase Alphabets 메서드</span><a href="#print-uppercase-alphabets-메서드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre>public void printUpperCaseAlphabets() {
+<pre><code class="language-C#">public void printUpperCaseAlphabets() {
 		for(char i = 97; i &lt;= 122; ++i )
 			if(this.ch == i) {
 				this.ch = (char)(this.ch - 32);
@@ -1003,7 +907,7 @@ public class myChar {
 			}
 	
 	}
-</pre></td></tr></tbody></table></code></div></div>
+</code></pre>
 
 
   </div>
@@ -1015,7 +919,7 @@ public class myChar {
       <i class="far fa-folder-open fa-fw me-1"></i>
       
       <a href="/categories/dev/">Dev</a>,
-      <a href="/categories/java/">java</a>
+      <a href="/categories/c/">C#</a>
     </div>
     
 
@@ -1024,7 +928,7 @@ public class myChar {
     <div class="post-tags">
       <i class="fa fa-tags fa-fw me-1"></i>
       
-      <a href="/tags/java/" class="post-tag no-text-decoration">java</a>
+      <a href="/tags/c/" class="post-tag no-text-decoration">C#</a>
       
       <a href="/tags/development/" class="post-tag no-text-decoration">development</a>
       
@@ -1146,15 +1050,6 @@ public class myChar {
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1169,18 +1064,6 @@ public class myChar {
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1190,145 +1073,12 @@ public class myChar {
     
     
     
-  
-    
-    
-    
-    
       
     
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1349,22 +1099,10 @@ public class myChar {
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/c/">C#</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/use-for-test/">use_for_test</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
       
     </div>
   </section>
@@ -1629,15 +1367,6 @@ public class myChar {
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1652,18 +1381,6 @@ public class myChar {
     
     
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1673,145 +1390,12 @@ public class myChar {
     
     
     
-  
-    
-    
-    
-    
       
     
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1832,22 +1416,10 @@ public class myChar {
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/c/">C#</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/use-for-test/">use_for_test</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
       
     </div>
   </section>

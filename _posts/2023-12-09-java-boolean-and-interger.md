@@ -1,8 +1,8 @@
 ---
 title : Boolean 자료형과 Interger 자료형
 date : YYYY-MM-DD HH:MM:SS +09:00
-categories : [Dev, java]
-tags : [java, development]
+categories : [Dev, C#]
+tags : [C#, development]
 ---
 
 
@@ -17,8 +17,7 @@ tags : [java, development]
 
 ---
 
-```
-package com.in28minutes.primitive.datatypes;
+``` C#
 
 public class myCharRunner {
 
@@ -54,8 +53,7 @@ public class myCharRunner {
 
 ### 클래스 및 생성자 선언 
 
-```
-package com.in28minutes.primitive.datatypes;
+``` C# 
 
 // 대문자 65 ~ 90
 
@@ -73,7 +71,7 @@ public class myChar {
 
 ### isVowel 메서드 
 
-```
+``` C# 
 // 리터럴 값이 모음인지를 판단
 	public boolean isVowel() {
 		// a e i o u or A E I O U
@@ -91,7 +89,7 @@ public class myChar {
 
 ### isNumber 메서드 
 
-```
+``` C# 
 	// 리터럴값의 숫자 여부 판단
 	public boolean isNumber() {
 			for(char i = 48; i <= 57; ++i ) {
@@ -107,7 +105,7 @@ public class myChar {
 
 ### isAlparbet 메서드 
 
-```
+``` C#
 // 리터럴값의 알파벳 여부판단
 	public boolean isAlphabet() {
 		 for(char i = 65; i <= 90; ++i ) 
@@ -124,7 +122,7 @@ public class myChar {
 
 ### printLowerCaseAlphabets 메서드 
 
-```
+``` C#
 public void printLowerCaseAlphabets() {
 		for(char i = 65; i <= 90; ++i)
 		{ 
@@ -143,7 +141,7 @@ public void printLowerCaseAlphabets() {
 
 ### print UpperCase Alphabets 메서드 
 
-```
+``` C#
 public void printUpperCaseAlphabets() {
 		for(char i = 97; i <= 122; ++i )
 			if(this.ch == i) {
