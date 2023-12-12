@@ -1,6 +1,5 @@
 ---
 title : 테스트 게시글 입니닷!
-date : YYYY-MM-DD HH:MM:SS +09:00
 categories : [Dev, tests]
 tags : [use_for_test, development]
 ---

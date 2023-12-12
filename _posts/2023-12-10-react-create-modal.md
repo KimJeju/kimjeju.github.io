@@ -1,6 +1,5 @@
 ---
 title : "리액트 모달 만들어보기"
-date : "YYYY-MM-DD HH:MM:SS +09:00"
 categories : [Dev, react]
 tags : [react,javascript]
 ---
