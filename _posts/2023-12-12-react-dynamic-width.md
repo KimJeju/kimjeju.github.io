@@ -1,5 +1,6 @@
 ---
 title : "동적 웹페이즈 사이즈 계산"
+date : "YYYY-MM-DD HH:MM:SS +09:00"
 categories : [Dev, react]
 tags : [react,javascript]
 ---

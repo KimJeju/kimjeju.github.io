@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-13T00:29:42+09:00</updated>
+  <updated>2023-12-10T19:05:02+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -20,71 +20,11 @@
 
   
   <entry>
-    <title>동적 웹페이즈 사이즈 계산</title>
-    <link href="http://localhost:4000/posts/react-dynamic-width/" rel="alternate" type="text/html" title="동적 웹페이즈 사이즈 계산" />
-    <published>2023-12-12T00:00:00+09:00</published>
-  
-    <updated>2023-12-12T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/react-dynamic-width/</id>
-    <content src="http://localhost:4000/posts/react-dynamic-width/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="react" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      동적 웹 페이지 크기 계산해보기
-
-포트폴리오를 만드는 도중 OverFlow : scroll 이 두개의 컴포넌트에서 각각 작동하다보니
-width가 작아짐에 따라 후자 컴포넌트가 원하는 대로 작동하지 않는 현상이 발생하였다.
-
-이를 해결하기 위해 UseEffect를 사용하여 현재 웹페이지의 크기를 동적으로 계산하여 
-조건문을 통하여 동적 컴포넌트 랜더링을 진행하였다.
-
-
-
-
-  ■ UseEffect를 사용하여 현재 웹페이지의 크기 동적 계산
-  
-    UseState 를 사용하여 현재 웹페이지값 상태로 저장
-    자바 스크립트 내장함수 window를 통하여 width값을 가져왔다.
-  
-
-
-
-
-코드
-
-function MyCareer() {
-
-    const [innerWidth, setInnerWid...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
     <title>리액트 모달 만들어보기</title>
     <link href="http://localhost:4000/posts/react-create-modal/" rel="alternate" type="text/html" title="리액트 모달 만들어보기" />
-    <published>2023-12-10T00:00:00+09:00</published>
+    <published>2023-12-10T09:00:00+09:00</published>
   
-    <updated>2023-12-10T00:00:00+09:00</updated>
+    <updated>2023-12-10T09:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/react-create-modal/</id>
     <content src="http://localhost:4000/posts/react-create-modal/" />
@@ -143,9 +83,9 @@ function Intro()
   <entry>
     <title>git fatal : the remote end hung up unexpected 에러 핸들링</title>
     <link href="http://localhost:4000/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/" rel="alternate" type="text/html" title="git fatal : the remote end hung up unexpected 에러 핸들링" />
-    <published>2023-12-10T00:00:00+09:00</published>
+    <published>2023-12-10T09:00:00+09:00</published>
   
-    <updated>2023-12-10T00:00:00+09:00</updated>
+    <updated>2023-12-10T09:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/</id>
     <content src="http://localhost:4000/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/" />
@@ -214,7 +154,7 @@ git config --global http.postBuffer 1024MB
   <entry>
     <title>Boolean 자료형과 Interger 자료형</title>
     <link href="http://localhost:4000/posts/java-boolean-and-interger/" rel="alternate" type="text/html" title="Boolean 자료형과 Interger 자료형" />
-    <published>2023-12-09T00:00:00+09:00</published>
+    <published>2023-12-10T09:00:00+09:00</published>
   
     <updated>2023-12-09T17:09:14+09:00</updated>
   
@@ -271,9 +211,9 @@ public class myCharRunner {
   <entry>
     <title>테스트 게시글 입니닷!</title>
     <link href="http://localhost:4000/posts/first-write-post/" rel="alternate" type="text/html" title="테스트 게시글 입니닷!" />
-    <published>2023-12-09T00:00:00+09:00</published>
+    <published>2023-12-10T09:00:00+09:00</published>
   
-    <updated>2023-12-09T00:00:00+09:00</updated>
+    <updated>2023-12-10T09:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/first-write-post/</id>
     <content src="http://localhost:4000/posts/first-write-post/" />

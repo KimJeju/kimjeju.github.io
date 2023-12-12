@@ -1,5 +1,6 @@
 ---
 title : Boolean 자료형과 Interger 자료형
+date : YYYY-MM-DD HH:MM:SS +09:00
 categories : [Dev, C#]
 tags : [C#, development]
 ---

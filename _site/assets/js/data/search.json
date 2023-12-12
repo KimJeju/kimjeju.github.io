@@ -1,28 +1,11 @@
 [
   
   {
-    "title": "동적 웹페이즈 사이즈 계산",
-    "url": "/posts/react-dynamic-width/",
-    "categories": "Dev, react",
-    "tags": "react, javascript",
-    "date": "2023-12-12 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "동적 웹 페이지 크기 계산해보기포트폴리오를 만드는 도중 OverFlow : scroll 이 두개의 컴포넌트에서 각각 작동하다보니width가 작아짐에 따라 후자 컴포넌트가 원하는 대로 작동하지 않는 현상이 발생하였다.이를 해결하기 위해 UseEffect를 사용하여 현재 웹페이지의 크기를 동적으로 계산하여 조건문을 통하여 동적 컴포넌트 랜더링을 진행하였다...",
-    "content": "동적 웹 페이지 크기 계산해보기포트폴리오를 만드는 도중 OverFlow : scroll 이 두개의 컴포넌트에서 각각 작동하다보니width가 작아짐에 따라 후자 컴포넌트가 원하는 대로 작동하지 않는 현상이 발생하였다.이를 해결하기 위해 UseEffect를 사용하여 현재 웹페이지의 크기를 동적으로 계산하여 조건문을 통하여 동적 컴포넌트 랜더링을 진행하였다.  ■ UseEffect를 사용하여 현재 웹페이지의 크기 동적 계산      UseState 를 사용하여 현재 웹페이지값 상태로 저장    자바 스크립트 내장함수 window를 통하여 width값을 가져왔다.  코드function MyCareer() {    const [innerWidth, setInnerWidth] = useState(window.innerWidth);    useEffect(() =&gt; {        const resizeListener = () =&gt; {            setInnerWidth(window.innerWidth);        };        window.addEventListener(\"resize\", resizeListener);    });    console.log(\"innerWidth\", innerWidth);    if (innerWidth &lt; 800) {        return (            &lt;CareerContainerMaxWidth800 className=\"openContainer\"&gt;                &lt;About /&gt;                &lt;Position /&gt;                &lt;Stack /&gt;            &lt;/CareerContainerMaxWidth800&gt;        )    } else {        return (            &lt;CareerContainer className=\"openContainer\"&gt;                &lt;About /&gt;                &lt;Position /&gt;                &lt;Stack /&gt;            &lt;/CareerContainer&gt;        )    }}export default MyCareer"
-  },
-  
-  {
     "title": "리액트 모달 만들어보기",
     "url": "/posts/react-create-modal/",
     "categories": "Dev, react",
     "tags": "react, javascript",
-    "date": "2023-12-10 00:00:00 +0900",
+    "date": "2023-12-10 09:00:00 +0900",
     
 
 
@@ -39,7 +22,7 @@
     "url": "/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/",
     "categories": "Git, Error Handling",
     "tags": "git, github, error",
-    "date": "2023-12-10 00:00:00 +0900",
+    "date": "2023-12-10 09:00:00 +0900",
     
 
 
@@ -56,7 +39,7 @@
     "url": "/posts/java-boolean-and-interger/",
     "categories": "Dev, C#",
     "tags": "C#, development",
-    "date": "2023-12-09 00:00:00 +0900",
+    "date": "2023-12-10 09:00:00 +0900",
     
 
 
@@ -73,7 +56,7 @@
     "url": "/posts/first-write-post/",
     "categories": "Dev, tests",
     "tags": "use_for_test, development",
-    "date": "2023-12-09 00:00:00 +0900",
+    "date": "2023-12-10 09:00:00 +0900",
     
 
 

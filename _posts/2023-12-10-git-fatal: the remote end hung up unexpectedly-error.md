@@ -1,5 +1,6 @@
 ---
 title : "git fatal : the remote end hung up unexpected 에러 핸들링"
+date : "YYYY-MM-DD HH:mm:ss +09:00"
 categories : [Git, Error Handling] 
 tags : [git, github, error]
 ---
