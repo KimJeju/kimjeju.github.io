@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-13T00:32:44+09:00</updated>
+  <updated>2023-12-15T16:01:26+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/react-dynamic-width/" rel="alternate" type="text/html" title="동적 웹페이즈 사이즈 계산" />
     <published>2023-12-12T00:00:00+09:00</published>
   
-    <updated>2023-12-13T00:31:23+09:00</updated>
+    <updated>2023-12-13T00:33:02+09:00</updated>
   
     <id>http://localhost:4000/posts/react-dynamic-width/</id>
     <content src="http://localhost:4000/posts/react-dynamic-width/" />
@@ -84,7 +84,7 @@ function MyCareer() {
     <link href="http://localhost:4000/posts/react-create-modal/" rel="alternate" type="text/html" title="리액트 모달 만들어보기" />
     <published>2023-12-10T00:00:00+09:00</published>
   
-    <updated>2023-12-13T00:31:23+09:00</updated>
+    <updated>2023-12-13T00:33:02+09:00</updated>
   
     <id>http://localhost:4000/posts/react-create-modal/</id>
     <content src="http://localhost:4000/posts/react-create-modal/" />
@@ -145,7 +145,7 @@ function Intro()
     <link href="http://localhost:4000/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/" rel="alternate" type="text/html" title="git fatal : the remote end hung up unexpected 에러 핸들링" />
     <published>2023-12-10T00:00:00+09:00</published>
   
-    <updated>2023-12-13T00:31:23+09:00</updated>
+    <updated>2023-12-13T00:33:02+09:00</updated>
   
     <id>http://localhost:4000/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/</id>
     <content src="http://localhost:4000/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/" />
@@ -216,7 +216,7 @@ git config --global http.postBuffer 1024MB
     <link href="http://localhost:4000/posts/java-boolean-and-interger/" rel="alternate" type="text/html" title="Boolean 자료형과 Interger 자료형" />
     <published>2023-12-09T00:00:00+09:00</published>
   
-    <updated>2023-12-13T00:31:23+09:00</updated>
+    <updated>2023-12-13T00:33:02+09:00</updated>
   
     <id>http://localhost:4000/posts/java-boolean-and-interger/</id>
     <content src="http://localhost:4000/posts/java-boolean-and-interger/" />
@@ -273,7 +273,7 @@ public class myCharRunner {
     <link href="http://localhost:4000/posts/first-write-post/" rel="alternate" type="text/html" title="테스트 게시글 입니닷!" />
     <published>2023-12-09T00:00:00+09:00</published>
   
-    <updated>2023-12-13T00:31:23+09:00</updated>
+    <updated>2023-12-13T00:33:02+09:00</updated>
   
     <id>http://localhost:4000/posts/first-write-post/</id>
     <content src="http://localhost:4000/posts/first-write-post/" />
@@ -299,6 +299,8 @@ public class myCharRunner {
 
       첫 게시글 테스트입니다.
 본 게시물은 카테고리와 태그 테스트를 위한 게시글입니다.
+
+
 
     </summary>
   
