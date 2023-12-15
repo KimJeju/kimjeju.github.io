@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-15T16:01:26+09:00</updated>
+  <updated>2023-12-15T18:13:22+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -273,7 +273,7 @@ public class myCharRunner {
     <link href="http://localhost:4000/posts/first-write-post/" rel="alternate" type="text/html" title="테스트 게시글 입니닷!" />
     <published>2023-12-09T00:00:00+09:00</published>
   
-    <updated>2023-12-13T00:33:02+09:00</updated>
+    <updated>2023-12-15T18:05:39+09:00</updated>
   
     <id>http://localhost:4000/posts/first-write-post/</id>
     <content src="http://localhost:4000/posts/first-write-post/" />
