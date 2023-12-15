@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-15T18:13:22+09:00</updated>
+  <updated>2023-12-15T18:57:57+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,69 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>chirpy 템플릿 프로필 image url 설정하기</title>
+    <link href="http://localhost:4000/posts/react-image-url-modify/" rel="alternate" type="text/html" title="chirpy 템플릿 프로필 image url 설정하기" />
+    <published>2023-12-15T00:00:00+09:00</published>
+  
+    <updated>2023-12-15T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/react-image-url-modify/</id>
+    <content src="http://localhost:4000/posts/react-image-url-modify/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Blog" />
+    
+    <category term="gitblog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      chirpy 템플릿 Image Url 설정하기
+
+깃 블로그를 만드는 도중 avarta 와 image가 올라가지 않는 현상이 발생해서
+원인을 찾고 Url를 설정해서 이미지를 올리는 작업 진행
+
+
+
+
+  ■ Image 가 올라가지 않은 원인
+  
+    Config.yml 의 이미지 기본 url 이 “https://chirpy-img.netlify.app” 으로 설정 되어있음
+    “assets/img/[source]” 로 img url을 설정해도 “ “https://chirpy-img.netlify.app/assets/~ 으로 설정됨”
+  
+
+
+
+
+
+
+
+  ■ 해결
+  
+    Config.yml 의 이미지 기본 url 수정
+    Config_yml 62번줄 수정
+  
+
+
+Config.yml 수정부분...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -262,46 +325,6 @@ public class myCharRunner {
 	  System.out.println(myChar.isVowel());
 	  
 	 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>테스트 게시글 입니닷!</title>
-    <link href="http://localhost:4000/posts/first-write-post/" rel="alternate" type="text/html" title="테스트 게시글 입니닷!" />
-    <published>2023-12-09T00:00:00+09:00</published>
-  
-    <updated>2023-12-15T18:05:39+09:00</updated>
-  
-    <id>http://localhost:4000/posts/first-write-post/</id>
-    <content src="http://localhost:4000/posts/first-write-post/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="tests" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      첫 게시글 테스트입니다.
-본 게시물은 카테고리와 태그 테스트를 위한 게시글입니다.
-
-
-
     </summary>
   
 

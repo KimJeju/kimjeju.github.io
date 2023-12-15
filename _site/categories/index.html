@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="kr" >
+<html lang="kr" data-mode="dark">
   <!-- The Head -->
 
 <head>
@@ -43,11 +43,11 @@
 <meta property="og:url" content="http://localhost:4000/categories/" />
 <meta property="og:site_name" content="Kimjeju" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-15T18:13:22+09:00" />
+<meta property="article:published_time" content="2023-12-15T18:57:57+09:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Categories" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-15T18:13:22+09:00","datePublished":"2023-12-15T18:13:22+09:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-15T18:57:57+09:00","datePublished":"2023-12-15T18:57:57+09:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -110,151 +110,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -337,14 +192,6 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
     
 
     
@@ -530,6 +377,93 @@
   
 
   
+    
+
+    
+
+    
+    
+
+    <div class="card categories">
+      <!-- top-category -->
+      <div
+        id="h_0"
+        class="card-header d-flex justify-content-between hide-border-bottom"
+      >
+        <span class="ms-2">
+          <i class="far fa-folder-open fa-fw"></i>
+
+          
+          <a href="/categories/blog/" class="mx-2">Blog</a>
+
+          <!-- content count -->
+          
+          <span class="text-muted small font-weight-light">
+            
+              1
+              
+                category
+              ,
+            
+
+            1
+
+            
+              post
+            
+          </span>
+        </span>
+
+        <!-- arrow -->
+        
+          <a
+            href="#l_0"
+            data-bs-toggle="collapse"
+            aria-expanded="true"
+            aria-label="h_0-trigger"
+            class="category-trigger hide-border-bottom"
+          >
+            <i class="fas fa-fw fa-angle-down"></i>
+          </a>
+        
+      </div>
+      <!-- .card-header -->
+
+      <!-- Sub-categories -->
+      
+        <div id="l_0" class="collapse show" aria-expanded="true">
+          <ul class="list-group">
+            
+              <li class="list-group-item">
+                <i class="far fa-folder fa-fw"></i>
+
+                
+                <a href="/categories/gitblog/" class="mx-2">gitblog</a>
+
+                
+                <span class="text-muted small font-weight-light">
+                  1
+
+                  
+                    post
+                  
+                </span>
+              </li>
+            
+          </ul>
+        </div>
+      
+    </div>
+    <!-- .card -->
+
+    
+  
+
+  
+  
+  
+
+  
 
   
   
@@ -546,7 +480,7 @@
     <div class="card categories">
       <!-- top-category -->
       <div
-        id="h_0"
+        id="h_1"
         class="card-header d-flex justify-content-between hide-border-bottom"
       >
         <span class="ms-2">
@@ -576,10 +510,10 @@
         <!-- arrow -->
         
           <a
-            href="#l_0"
+            href="#l_1"
             data-bs-toggle="collapse"
             aria-expanded="true"
-            aria-label="h_0-trigger"
+            aria-label="h_1-trigger"
             class="category-trigger hide-border-bottom"
           >
             <i class="fas fa-fw fa-angle-down"></i>
@@ -590,7 +524,7 @@
 
       <!-- Sub-categories -->
       
-        <div id="l_0" class="collapse show" aria-expanded="true">
+        <div id="l_1" class="collapse show" aria-expanded="true">
           <ul class="list-group">
             
               <li class="list-group-item">
@@ -671,7 +605,7 @@
     <div class="card categories">
       <!-- top-category -->
       <div
-        id="h_1"
+        id="h_2"
         class="card-header d-flex justify-content-between hide-border-bottom"
       >
         <span class="ms-2">
@@ -701,10 +635,10 @@
         <!-- arrow -->
         
           <a
-            href="#l_1"
+            href="#l_2"
             data-bs-toggle="collapse"
             aria-expanded="true"
-            aria-label="h_1-trigger"
+            aria-label="h_2-trigger"
             class="category-trigger hide-border-bottom"
           >
             <i class="fas fa-fw fa-angle-down"></i>
@@ -715,7 +649,7 @@
 
       <!-- Sub-categories -->
       
-        <div id="l_1" class="collapse show" aria-expanded="true">
+        <div id="l_2" class="collapse show" aria-expanded="true">
           <ul class="list-group">
             
               <li class="list-group-item">
@@ -741,6 +675,12 @@
     <!-- .card -->
 
     
+  
+
+  
+  
+  
+
   
 
   
@@ -877,6 +817,34 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -913,6 +881,8 @@
     
     
     
+      
+    
   
     
     
@@ -934,27 +904,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -975,13 +924,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1016,8 +958,6 @@
     
     
     
-      
-    
   
     
     
@@ -1050,8 +990,6 @@
     
     
     
-    
-      
     
   
     
@@ -1089,6 +1027,9 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/javascript/">javascript</a>
       
         
@@ -1099,9 +1040,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/error/">error</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">github</a>
@@ -1210,6 +1148,34 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1246,6 +1212,8 @@
     
     
     
+      
+    
   
     
     
@@ -1267,27 +1235,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1308,13 +1255,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1349,8 +1289,6 @@
     
     
     
-      
-    
   
     
     
@@ -1383,8 +1321,6 @@
     
     
     
-    
-      
     
   
     
@@ -1422,6 +1358,9 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/javascript/">javascript</a>
       
         
@@ -1432,9 +1371,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/error/">error</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">github</a>

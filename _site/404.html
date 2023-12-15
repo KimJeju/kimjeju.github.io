@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="kr" >
+<html lang="kr" data-mode="dark">
   <!-- The Head -->
 
 <head>
@@ -116,151 +116,6 @@
   <!-- JavaScript -->
 
   
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
-
-  
 
   <!-- A placeholder to allow defining custom metadata -->
 
@@ -341,14 +196,6 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
     
 
     
@@ -708,6 +555,34 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -744,6 +619,8 @@
     
     
     
+      
+    
   
     
     
@@ -765,27 +642,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -806,13 +662,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -847,8 +696,6 @@
     
     
     
-      
-    
   
     
     
@@ -881,8 +728,6 @@
     
     
     
-    
-      
     
   
     
@@ -920,6 +765,9 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/javascript/">javascript</a>
       
         
@@ -930,9 +778,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/error/">error</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">github</a>
@@ -1041,6 +886,34 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1077,6 +950,8 @@
     
     
     
+      
+    
   
     
     
@@ -1098,27 +973,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1139,13 +993,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1180,8 +1027,6 @@
     
     
     
-      
-    
   
     
     
@@ -1214,8 +1059,6 @@
     
     
     
-    
-      
     
   
     
@@ -1253,6 +1096,9 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/javascript/">javascript</a>
       
         
@@ -1263,9 +1109,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/error/">error</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">github</a>
