@@ -36,24 +36,25 @@ tags : [git]
 
 > github page 에 빌드 배포 
 > - 본인의 레포지토리에 setting 들어가기
-> ![content image](/assets/img/22-12-17_post/10.png)
+> ![content image](/assets/img/23-12-17_post/10.png)
 >
 > - pages 에 들어가기
-> ![content image](/assets/img/22-12-17_post/11.png){: width="50%" height="50%"}
+> ![content image](/assets/img/23-12-17_post/11.png){: width="50%" height="50%"}
 > 
 > - npm run deploy 실행 시 생성되는 gh-pages 브랜치로 변경하기
-> ![content image](/assets/img/22-12-17_post/12.png){: width="50%" height="50%"}
+> ![content image](/assets/img/23-12-17_post/12.png){: width="50%" height="50%"}
 >
 > - git에 프로젝트 소스 올리기
 
 <br/>
 
 > github action에서 파이프라인 확인하기
-> ![content image](/assets/img/22-12-17_post/5.png)
+> ![content image](/assets/img/23-12-17_post/5.png)
 
 <br/>
+
 > github action에서 파이프라인 확인하기
-> ![content image](/assets/img/22-12-17_post/13.png)
+> ![content image](/assets/img/23-12-17_post/13.png)
 
 
 

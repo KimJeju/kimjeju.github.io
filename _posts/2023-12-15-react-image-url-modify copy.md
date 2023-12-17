@@ -71,7 +71,7 @@ toc: true
 ---
 
 ## 프로필 업로드 확인
-![content image](/assets/img/22-12-15_post/change_profle.png){: width : "350" class="normal"}
+![content image](/assets/img/23-12-15_post/change_profle.png){: width : "50%" height : "50%"}
 
 
 
