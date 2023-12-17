@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-15T18:57:57+09:00</updated>
+  <updated>2023-12-18T00:17:04+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,76 @@
 
   
   <entry>
+    <title>리액트 프로젝트 깃허브 페이지로 배포하기</title>
+    <link href="http://localhost:4000/posts/react-deploy-github-page/" rel="alternate" type="text/html" title="리액트 프로젝트 깃허브 페이지로 배포하기" />
+    <published>2023-12-17T00:00:00+09:00</published>
+  
+    <updated>2023-12-17T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/react-deploy-github-page/</id>
+    <content src="http://localhost:4000/posts/react-deploy-github-page/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Blog" />
+    
+    <category term="gitblog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      리액트 프로젝트 깃 허브 페이지 배포 step
+
+
+  gh-page 라이브러리 설치하기
+  
+    
+      본인의 패키지에 맞게 아래 두 커맨드 리액트 프로젝트 폴더 cmd 에서 실행
+    
+    npm install gh-pages –save
+    yarm install gh-pages 
+
+npm install gh-pages –save 실행화면
+  
+
+
+
+
+
+  package.json 파일에 본인의 레파지토리 주소 및 npm script 추가하기
+  
+    
+      package.js 최상단의   “homepage”: “https://{본인 깃허브 이름}.github.io/{본인 레포지토리 이름}/” 작성
+
+package.json 에 깃주소 추가
+    
+    
+      scri...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>chirpy 템플릿 프로필 image url 설정하기</title>
-    <link href="http://localhost:4000/posts/react-image-url-modify/" rel="alternate" type="text/html" title="chirpy 템플릿 프로필 image url 설정하기" />
+    <link href="http://localhost:4000/posts/react-image-url-modify-copy/" rel="alternate" type="text/html" title="chirpy 템플릿 프로필 image url 설정하기" />
     <published>2023-12-15T00:00:00+09:00</published>
   
     <updated>2023-12-15T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/react-image-url-modify/</id>
-    <content src="http://localhost:4000/posts/react-image-url-modify/" />
+    <id>http://localhost:4000/posts/react-image-url-modify-copy/</id>
+    <content src="http://localhost:4000/posts/react-image-url-modify-copy/" />
     <author>
       <name>Kimjeju</name>
     </author>
@@ -268,63 +330,6 @@ git config --global http.postBuffer 1024MB
 
 
   참...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Boolean 자료형과 Interger 자료형</title>
-    <link href="http://localhost:4000/posts/java-boolean-and-interger/" rel="alternate" type="text/html" title="Boolean 자료형과 Interger 자료형" />
-    <published>2023-12-09T00:00:00+09:00</published>
-  
-    <updated>2023-12-13T00:33:02+09:00</updated>
-  
-    <id>http://localhost:4000/posts/java-boolean-and-interger/</id>
-    <content src="http://localhost:4000/posts/java-boolean-and-interger/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="C#" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      ■ my Char Runner
-
-
-
-
-  기능 : myCharClass의 기능들을 작동시킬 수 있다.
-■ 메인 메서드를 선언해 줌으로서 myChar 클래스의 메서드를 작동시킬 수 있다.
-■ myChar 오브젝트를 new myChar 클래스에 선언해 줌으로서 charactor 파라미터를 받을 수 있다.
-■ System.out.println()을 선언해 줌으로 myCharClass안에 메서드들을 로그에 출력할 수 있다.
-
-
-
-
-
-public class myCharRunner {
-
-	public static void main(String[] args) {
-		
-	  myChar myChar = new myChar('c');
-	  System.out.println(myChar.isVowel());
-	  
-	 ...
     </summary>
   
 
