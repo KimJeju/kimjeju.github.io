@@ -33,6 +33,12 @@ export PATH="/Library/Frameworks/Python.framework/Version/3.9/bin:${PATH}"
 <br />
 
 ### 2.가상환경 구축하기
+> - 가상환경을 구축하는 이유
+> - - 프로젝트마다 격리된 환경을 구축해 프로젝트별 패키지를 관리하기 위함
+> - - 진행하는 프로젝트에서 필요로하는 버전의 패키지만 설치 구성 하기 위함
+> - - 차 후 더 추가 예정
+
+
 > 1. virtualenvwrapper 설치
 ```
 // 내 맥 기준 pip 뒤에 3을 안붙여주면 커맨드를 찾지 못한다.
