@@ -1,8 +1,25 @@
 [
   
   {
+    "title": "mac 환경에 Django 세팅하기",
+    "url": "/posts/mac-django-setting/",
+    "categories": "Python, Django",
+    "tags": "python, Django",
+    "date": "2023-12-20 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Mac 환겅      M2 맥북 에어    mac os Sonoma 14.2    python 3.9.6    터미널 zsh  1.Python 설치하기            pythone 설치 여부 확인        깔려있지 않다면 아래 링크에서 설치하기              python 공식 다운로드 (필자 3.9.6 설치)        python...",
+    "content": "Mac 환겅      M2 맥북 에어    mac os Sonoma 14.2    python 3.9.6    터미널 zsh  1.Python 설치하기            pythone 설치 여부 확인        깔려있지 않다면 아래 링크에서 설치하기              python 공식 다운로드 (필자 3.9.6 설치)        python 공홈              python3 명령어를 python 으로 바꾸기 위해 환경변수 설정              터미널에서 vi~/.zshrc 실행 후 아래 코드 입력        vi 환경에서 a 를 눌러 input 환경으로 만든 후 맨 아레에 작성 후 esc 누르고 wq( 입력저장 )로 빠져나오기          alias python=\"python3\"# Setting PATH for Python 3.9export PATH=\"/Library/Frameworks/Python.framework/Version/3.9/bin:${PATH}\"                              2.가상환경 구축하기      virtualenvwrapper 설치      // 내 맥 기준 pip 뒤에 3을 안붙여주면 커맨드를 찾지 못한다.sudo pip3 install virtualenvwrapper              다시 vi~/.zshrc 를 터미널에서 실행해 아래 환경변수 추가      export WORKON_HOME=$HOME/.virtualenvsexport VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3export PROJECT_HOME=$HOME/Develsource /usr/local/bin/virtualenvwrapper.sh                    터미널에서 source ~/.zshrc 실행  3.가상환경 생성      가상환경 생성      mkvirtualenv 가상환경명              가상환경 활성화      workon 가상환경명            가상환경 실행화면      4.가상환경에 Django 설치      장고설치      pip3 install django              장고 버전 확인      python -m django --version                    장고 프로젝트 생성      django-admin startproject 플젝이름               프로젝트 생성 폴더에 setting.py =&gt; Timezone 설정    프로젝트 폴더로 가서 프로젝트 실행      python manage.py runserver            5. 실행확인      터미널 상에 실행 url 입력 및 확인  "
+  },
+  
+  {
     "title": "리액트 프로젝트 깃허브 페이지로 배포하기",
-    "url": "/posts/react-deploy-github-page/",
+    "url": "/posts/react-deploy-github-page-copy/",
     "categories": "Blog, gitblog",
     "tags": "git",
     "date": "2023-12-17 00:00:00 +0900",
@@ -14,7 +31,7 @@
 
     
     "snippet": "리액트 프로젝트 깃 허브 페이지 배포 step  gh-page 라이브러리 설치하기            본인의 패키지에 맞게 아래 두 커맨드 리액트 프로젝트 폴더 cmd 에서 실행        npm install gh-pages –save    yarm install gh-pages npm install gh-pages –save 실행화면    pac...",
-    "content": "리액트 프로젝트 깃 허브 페이지 배포 step  gh-page 라이브러리 설치하기            본인의 패키지에 맞게 아래 두 커맨드 리액트 프로젝트 폴더 cmd 에서 실행        npm install gh-pages –save    yarm install gh-pages npm install gh-pages –save 실행화면    package.json 파일에 본인의 레파지토리 주소 및 npm script 추가하기            package.js 최상단의   “homepage”: “https://{본인 깃허브 이름}.github.io/{본인 레포지토리 이름}/” 작성package.json 에 깃주소 추가              scripts 블럭안에 “predeploy”: “npm run build”, “deploy”: “gh-pages -d build” 두 스크립트 추가package.json 에 script 추가        build script 실행      추가한 script “npm run deploy” 실행script 실행 화면    github page 에 빌드 배포            본인의 레포지토리에 setting 들어가기              pages 에 들어가기              npm run deploy 실행 시 생성되는 gh-pages 브랜치로 변경하기              git에 프로젝트 소스 올리기        github action에서 파이프라인 확인하기  github action에서 파이프라인 확인하기"
+    "content": "리액트 프로젝트 깃 허브 페이지 배포 step  gh-page 라이브러리 설치하기            본인의 패키지에 맞게 아래 두 커맨드 리액트 프로젝트 폴더 cmd 에서 실행        npm install gh-pages –save    yarm install gh-pages npm install gh-pages –save 실행화면    package.json 파일에 본인의 레파지토리 주소 및 npm script 추가하기            package.js 최상단의   “homepage”: “https://{본인 깃허브 이름}.github.io/{본인 레포지토리 이름}/” 작성package.json 에 깃주소 추가              scripts 블럭안에 “predeploy”: “npm run build”, “deploy”: “gh-pages -d build” 두 스크립트 추가package.json 에 script 추가        build script 실행      추가한 script “npm run deploy” 실행script 실행 화면    github page 에 빌드 배포            본인의 레포지토리에 setting 들어가기              pages 에 들어가기              npm run deploy 실행 시 생성되는 gh-pages 브랜치로 변경하기              git에 프로젝트 소스 올리기        github action에서 파이프라인 확인하기  github action에서 파이프라인 확인하기##"
   },
   
   {
