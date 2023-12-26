@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-21T20:49:33+09:00</updated>
+  <updated>2023-12-27T01:21:41+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,94 @@
 
   
   <entry>
+    <title>Django Model 마이그레이션 해보기</title>
+    <link href="http://localhost:4000/posts/django-db-migration/" rel="alternate" type="text/html" title="Django Model 마이그레이션 해보기" />
+    <published>2023-12-27T00:00:00+09:00</published>
+  
+    <updated>2023-12-27T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/django-db-migration/</id>
+    <content src="http://localhost:4000/posts/django-db-migration/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+    <category term="Django" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Mac 환겅
+
+1.Python 설치하기
+
+  
+    models.py 에 모델 클래스 정의
+
+  
+
+
+
+
+
+2.manage.py 가 있는 폴더에서 마이그레이션 만들기
+
+
+
+  python manage.py makemigrations {본인 앱 이름}
+  
+
+
+
+
+3. Db 와 마이그레이션 진행하기
+
+
+
+  python manage.py migrate {본인 앱 이름}
+  
+  
+    마이그레이션 시에 어떤 Sql 문 실행되었는지 확인하기
+
+      python manage.py sqlmigate {본인 앱 이름} { initial 된 마이그레이션 번호 }
+      
+    
+    Db 에서 마이그레이션 잘 되었는지 확인하기
+
+  
+
+
+4.가상환경에 Django 설치
+
+  
+    장고설치
+  ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>mac 환경에 Django 세팅하기</title>
-    <link href="http://localhost:4000/posts/mac-django-setting/" rel="alternate" type="text/html" title="mac 환경에 Django 세팅하기" />
+    <link href="http://localhost:4000/posts/mac-django-setting-copy/" rel="alternate" type="text/html" title="mac 환경에 Django 세팅하기" />
     <published>2023-12-20T00:00:00+09:00</published>
   
-    <updated>2023-12-21T00:01:22+09:00</updated>
+    <updated>2023-12-20T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/mac-django-setting/</id>
-    <content src="http://localhost:4000/posts/mac-django-setting/" />
+    <id>http://localhost:4000/posts/mac-django-setting-copy/</id>
+    <content src="http://localhost:4000/posts/mac-django-setting-copy/" />
     <author>
       <name>Kimjeju</name>
     </author>
@@ -263,67 +343,6 @@ width가 작아짐에 따라 후자 컴포넌트가 원하는 대로 작동하�
 function MyCareer() {
 
     const [innerWidth, setInnerWid...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>리액트 모달 만들어보기</title>
-    <link href="http://localhost:4000/posts/react-create-modal/" rel="alternate" type="text/html" title="리액트 모달 만들어보기" />
-    <published>2023-12-10T00:00:00+09:00</published>
-  
-    <updated>2023-12-13T00:33:02+09:00</updated>
-  
-    <id>http://localhost:4000/posts/react-create-modal/</id>
-    <content src="http://localhost:4000/posts/react-create-modal/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="react" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      포트폴리오 경력사항 작성을 위한 모달 창 구현해보기
-
-
-
-
-  ■ 상태 라이브러리를 통한 show 모달 상태 관리
-  
-    UseState 를 사용하여 모달에 show 여부를 저장
-    showModal 함수와 button을 통해 show modal 이벤트 트리거 발생 시키기
-  
-
-
-
-
-코드
-
-function Intro()
-{
-    //Modal 영역
-    const [ openModal, setOpenModal ] = useState(false);
-
-    //모달의 open, hide 속성을 담당할 메서드
-    function showModal(){
-        //console.log 로 이벤트 발생 여부 확인해보기
-        alert("모달 이벤트 발생");
-        s...
     </summary>
   
 
