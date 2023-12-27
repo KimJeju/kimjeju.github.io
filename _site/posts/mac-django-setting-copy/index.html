@@ -1276,6 +1276,13 @@ source /usr/local/bin/virtualenvwrapper.sh
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/django-db-migration/">Django Model 마이그레이션 해보기</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/first-write-post/">테스트 게시글 입니닷!</a>
         </li>
       
@@ -1298,13 +1305,6 @@ source /usr/local/bin/virtualenvwrapper.sh
         
         <li class="text-truncate lh-lg">
           <a href="/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/">git fatal : the remote end hung up unexpected 에러 핸들링</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/react-create-modal/">리액트 모달 만들어보기</a>
         </li>
       
     </ul>
@@ -1374,6 +1374,21 @@ source /usr/local/bin/virtualenvwrapper.sh
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1387,25 +1402,6 @@ source /usr/local/bin/virtualenvwrapper.sh
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1677,10 +1673,10 @@ source /usr/local/bin/virtualenvwrapper.sh
         <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
@@ -1780,6 +1776,18 @@ source /usr/local/bin/virtualenvwrapper.sh
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
 
 
@@ -1794,6 +1802,57 @@ source /usr/local/bin/virtualenvwrapper.sh
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/django-add-bootstrap5/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1703602800"
+  data-df="ll"
+  
+>
+  Dec 27, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Django 부트스트랩 추가해보기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  1. 프로젝트 최상위 폴더에 requirements.txt 추가
+
+  
+    requirements.txt 는 Django 부트스트랩에 텍스트형식 패키지 관리 시스템이다.
+    프로젝트 최상위 폴더에 추가해준다.
+      
+        
+      
+    
+  
+
+
+
+
+2.requirements.txt 에 bootstrap5 추가 및 인스톨
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/django-app-config/" class="post-preview card h-100">
@@ -1865,7 +1924,7 @@ python manage.py startapp {본인 앱 명}
         </article>
       
         <article class="col">
-          <a href="/posts/django-db-migration-copy/" class="post-preview card h-100">
+          <a href="/posts/django-db-migration/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1893,9 +1952,7 @@ python manage.py startapp {본인 앱 명}
 
 
 
-                  Mac 환겅
-
-1.Python 설치하기
+                  1.Python 설치하기
 
   
     models.py 에 모델 클래스 정의
@@ -1922,7 +1979,7 @@ python manage.py makemigrations {본인 앱 이름}
 
 
   1
-python manage.py mig...
+python manage.py migrate {본인...
                 </p>
               </div>
             </div>
@@ -1954,11 +2011,11 @@ python manage.py mig...
 
   
     <a
-      href="/posts/django-app-config/"
+      href="/posts/django-add-bootstrap5/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Django 에 App 등록하기</p>
+      <p>Django 부트스트랩 추가해보기</p>
     </a>
   
 </nav>
@@ -2119,6 +2176,21 @@ python manage.py mig...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2132,25 +2204,6 @@ python manage.py mig...
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2422,10 +2475,10 @@ python manage.py mig...
         <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>

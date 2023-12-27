@@ -43,6 +43,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Kimjeju" />
 <meta property="og:type" content="website" />
+<link rel="next" href="http://localhost:4000/page2" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Kimjeju" />
 <script type="application/ld+json">
@@ -428,7 +429,7 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
     <article class="card-wrapper card">
-      <a href="/posts/django-db-migration-copy/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/django-db-migration/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
@@ -445,9 +446,7 @@
 
 
 
-                Mac 환겅
-
-1.Python 설치하기
+                1.Python 설치하기
 
   
     models.py 에 모델 클래스 정의
@@ -472,7 +471,7 @@
 
 
 
-  python manage.py migrate...
+  python manage.py migrate {본인 앱 이...
               </p>
             </div>
 
@@ -568,6 +567,85 @@ python manage.py startapp {본인 앱 명}
   
     setting.py -&amp;gt; installed_app 에 만든 앱 등록
   ...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1703602800"
+  data-df="ll"
+  
+>
+  Dec 27, 2023
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Python,
+                      Django
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/django-add-bootstrap5/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">Django 부트스트랩 추가해보기</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                1. 프로젝트 최상위 폴더에 requirements.txt 추가
+
+  
+    requirements.txt 는 Django 부트스트랩에 텍스트형식 패키지 관리 시스템이다.
+    프로젝트 최상위 폴더에 추가해준다.
+      
+        
+      
+    
+  
+
+
+
+
+2.requirements.txt 에 bootstrap5 추가 및 인스톨
+...
               </p>
             </div>
 
@@ -1147,78 +1225,82 @@ function Intro()
       </a>
     </article>
   
-    <article class="card-wrapper card">
-      <a href="/posts/first-write-post/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">테스트 게시글 입니닷!</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                첫 게시글 테스트입니다.
-본 게시물은 카테고리와 태그 테스트를 위한 게시글입니다.
-
-
-
-#####
-
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1702047600"
-  data-df="ll"
-  
->
-  Dec  9, 2023
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Dev,
-                      tests
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
 </div>
 <!-- #post-list -->
+
+
+  <!-- The paginator for post list on HomgPage. -->
+
+<nav aria-label="Page Navigation">
+  <ul class="pagination align-items-center mt-4 mb-0">
+    <!-- left arrow -->
+    
+
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="previous-page">
+        <i class="fas fa-angle-left"></i>
+      </a>
+    </li>
+
+    <!-- page numbers -->
+    
+    
+
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item  active">
+          <a
+            class="page-link"
+            href="/"
+          >1</a>
+        </li>
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item ">
+          <a
+            class="page-link"
+            href="/page2"
+          >2</a>
+        </li>
+      
+    
+
+    <!-- mobile pagination -->
+    <li class="page-index align-middle">
+      <span>1</span>
+      <span class="text-muted">/ 2</span>
+    </li>
+
+    <!-- right arrow -->
+    
+
+    <li class="page-item ">
+      <a class="page-link" href="/page2" aria-label="next-page">
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- .pagination -->
 
 
 
@@ -1252,6 +1334,13 @@ function Intro()
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/django-db-migration/">Django Model 마이그레이션 해보기</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/first-write-post/">테스트 게시글 입니닷!</a>
         </li>
       
@@ -1274,13 +1363,6 @@ function Intro()
         
         <li class="text-truncate lh-lg">
           <a href="/posts/git-fatal-the-remote-end-hung-up-unexpectedly-error/">git fatal : the remote end hung up unexpected 에러 핸들링</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/react-create-modal/">리액트 모달 만들어보기</a>
         </li>
       
     </ul>
@@ -1350,6 +1432,21 @@ function Intro()
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1363,25 +1460,6 @@ function Intro()
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1653,10 +1731,10 @@ function Intro()
         <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
@@ -1790,6 +1868,21 @@ function Intro()
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1803,25 +1896,6 @@ function Intro()
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2093,10 +2167,10 @@ function Intro()
         <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>

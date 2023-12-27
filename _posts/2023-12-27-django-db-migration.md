@@ -4,7 +4,6 @@ categories : [Python, Django]
 tags : [python, Django]
 ---
 
-### Mac 환겅
 
 
 ### 1.Python 설치하기
@@ -13,7 +12,7 @@ tags : [python, Django]
 >
 
 
-<br />
+<br />      
 
 ### 2.manage.py 가 있는 폴더에서 마이그레이션 만들기
 ![content image](/assets/img/23-12-27_post/2.png){: width : "150" class="normal"}
