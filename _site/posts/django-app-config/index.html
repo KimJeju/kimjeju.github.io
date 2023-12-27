@@ -35,24 +35,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Django Model 마이그레이션 해보기" />
+<meta property="og:title" content="Django 에 App 등록하기" />
 <meta property="og:locale" content="kr" />
 <meta name="description" content="Mac 환겅" />
 <meta property="og:description" content="Mac 환겅" />
-<link rel="canonical" href="http://localhost:4000/posts/django-db-migration/" />
-<meta property="og:url" content="http://localhost:4000/posts/django-db-migration/" />
+<link rel="canonical" href="http://localhost:4000/posts/django-app-config/" />
+<meta property="og:url" content="http://localhost:4000/posts/django-app-config/" />
 <meta property="og:site_name" content="Kimjeju" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-12-27T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Django Model 마이그레이션 해보기" />
+<meta property="twitter:title" content="Django 에 App 등록하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-27T00:00:00+09:00","datePublished":"2023-12-27T00:00:00+09:00","description":"Mac 환겅","headline":"Django Model 마이그레이션 해보기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/django-db-migration/"},"url":"http://localhost:4000/posts/django-db-migration/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-27T00:00:00+09:00","datePublished":"2023-12-27T00:00:00+09:00","description":"Mac 환겅","headline":"Django 에 App 등록하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/django-app-config/"},"url":"http://localhost:4000/posts/django-app-config/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Django Model 마이그레이션 해보기 | Kimjeju
+  <title>Django 에 App 등록하기 | Kimjeju
   </title>
 
   <!--
@@ -317,7 +317,7 @@
         
           
             
-              <span>Django Model 마이그레이션 해보기</span>
+              <span>Django 에 App 등록하기</span>
             
 
           
@@ -398,77 +398,6 @@
     
       
       
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
     
 
     
@@ -851,7 +780,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Django Model 마이그레이션 해보기</h1>
+    <h1 data-toc-skip>Django 에 App 등록하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -918,7 +847,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="132 words"
+  title="91 words"
 >
   <em>1 min</em> read</span>
 
@@ -931,50 +860,50 @@
   <div class="content">
     <h3 id="mac-환겅"><span class="me-2">Mac 환겅</span><a href="#mac-환겅" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<h3 id="1python-설치하기"><span class="me-2">1.Python 설치하기</span><a href="#1python-설치하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="1-managepy-startapp-을-통해-app-만들기"><span class="me-2">1. manage.py startapp 을 통해 app 만들기</span><a href="#1-managepy-startapp-을-통해-app-만들기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <blockquote>
-  <ol>
-    <li>models.py 에 모델 클래스 정의
-<a href="/assets/img/23-12-27_post/1.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post/1.png" alt="content image"  loading="lazy"></a></li>
-  </ol>
 
 </blockquote>
 
-<p><br /></p>
-
-<h3 id="2managepy-가-있는-폴더에서-마이그레이션-만들기"><span class="me-2">2.manage.py 가 있는 폴더에서 마이그레이션 만들기</span><a href="#2managepy-가-있는-폴더에서-마이그레이션-만들기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><a href="/assets/img/23-12-27_post/2.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post/2.png" alt="content image"  loading="lazy"></a></p>
-<blockquote>
-
-  <div class="language-python highlighter-rouge"><div class="code-header">
+<div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">python</span> <span class="n">manage</span><span class="p">.</span><span class="n">py</span> <span class="n">makemigrations</span> <span class="p">{</span><span class="n">본인</span> <span class="n">앱</span> <span class="n">이름</span><span class="p">}</span>
-</pre></td></tr></tbody></table></code></div>  </div>
-</blockquote>
+2
+3
+</pre></td><td class="rouge-code"><pre>
+<span class="n">python</span> <span class="n">manage</span><span class="p">.</span><span class="n">py</span> <span class="n">startapp</span> <span class="p">{</span><span class="n">본인</span> <span class="n">앱</span> <span class="n">명</span><span class="p">}</span>
 
-<p><br /></p>
-
-<h3 id="3-db-와-마이그레이션-진행하기"><span class="me-2">3. Db 와 마이그레이션 진행하기</span><a href="#3-db-와-마이그레이션-진행하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><a href="/assets/img/23-12-27_post/3.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post/3.png" alt="content image"  loading="lazy"></a></p>
+</pre></td></tr></tbody></table></code></div></div>
 <blockquote>
-
-  <div class="language-python highlighter-rouge"><div class="code-header">
-        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">python</span> <span class="n">manage</span><span class="p">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="p">{</span><span class="n">본인</span> <span class="n">앱</span> <span class="n">이름</span><span class="p">}</span>
-</pre></td></tr></tbody></table></code></div>  </div>
   <ul>
-    <li>마이그레이션 시에 어떤 Sql 문 실행되었는지 확인하기
-<a href="/assets/img/23-12-27_post/4.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post/4.png" alt="content image"  loading="lazy"></a>
-      <div class="language-python highlighter-rouge"><div class="code-header">
-        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">python</span> <span class="n">manage</span><span class="p">.</span><span class="n">py</span> <span class="n">sqlmigate</span> <span class="p">{</span><span class="n">본인</span> <span class="n">앱</span> <span class="n">이름</span><span class="p">}</span> <span class="p">{</span> <span class="n">initial</span> <span class="n">된</span> <span class="n">마이그레이션</span> <span class="n">번호</span> <span class="p">}</span>
-</pre></td></tr></tbody></table></code></div>      </div>
-    </li>
-    <li>Db 에서 마이그레이션 잘 되었는지 확인하기
-<a href="/assets/img/23-12-27_post/5.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post/5.png" alt="content image"  loading="lazy"></a></li>
+    <li><a href="/assets/img/23-12-27_post2/1.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post2/1.png" alt="content image"  loading="lazy"></a>
+<em>명령어 실행화면</em></li>
+    <li><a href="/assets/img/23-12-27_post2/4.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post2/4.png" alt="content image"  loading="lazy"></a>
+<em>앱 생성</em></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="2settingpy-에-앱등록하기"><span class="me-2">2.setting.py 에 앱등록하기</span><a href="#2settingpy-에-앱등록하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><a href="/assets/img/23-12-27_post2/2.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post2/2.png" alt="content image"  loading="lazy"></a></p>
+<blockquote>
+  <ul>
+    <li>setting.py -&gt; installed_app 에 만든 앱 등록</li>
+  </ul>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="3-앱-이름-사전에-등록하기"><span class="me-2">3. 앱 이름 사전에 등록하기</span><a href="#3-앱-이름-사전에-등록하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote>
+  <p><a href="/assets/img/23-12-27_post2/3.png" class="popup img-link normal shimmer"><img src="/assets/img/23-12-27_post2/3.png" alt="content image"  loading="lazy"></a></p>
+  <ul>
+    <li>밑줄이 쳐져있는 앱 이름에 alt + enter or command + enter 를 통해 사전에 등록해주기</li>
   </ul>
 </blockquote>
 
@@ -1033,21 +962,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Django%20Model%20%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%20%ED%95%B4%EB%B3%B4%EA%B8%B0%20-%20Kimjeju&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdjango-db-migration%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Django%20%EC%97%90%20App%20%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0%20-%20Kimjeju&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdjango-app-config%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Django%20Model%20%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%20%ED%95%B4%EB%B3%B4%EA%B8%B0%20-%20Kimjeju&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdjango-db-migration%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Django%20%EC%97%90%20App%20%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0%20-%20Kimjeju&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdjango-app-config%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdjango-db-migration%2F&text=Django%20Model%20%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%20%ED%95%B4%EB%B3%B4%EA%B8%B0%20-%20Kimjeju" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdjango-app-config%2F&text=Django%20%EC%97%90%20App%20%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0%20-%20Kimjeju" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1172,6 +1101,75 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1217,29 +1215,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1281,8 +1256,6 @@
     
     
     
-      
-    
   
     
     
@@ -1309,58 +1282,6 @@
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1511,19 +1432,19 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/javascript/">javascript</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/react/">react</a>
@@ -1589,6 +1510,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1678,6 +1611,71 @@
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/django-db-migration-copy/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1703602800"
+  data-df="ll"
+  
+>
+  Dec 27, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Django Model 마이그레이션 해보기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Mac 환겅
+
+1.Python 설치하기
+
+  
+    models.py 에 모델 클래스 정의
+
+  
+
+
+
+
+
+2.manage.py 가 있는 폴더에서 마이그레이션 만들기
+
+
+
+  1
+python manage.py makemigrations {본인 앱 이름}
+  
+
+
+
+
+3. Db 와 마이그레이션 진행하기
+
+
+
+  1
+python manage.py mig...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1702,9 +1700,13 @@
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/django-db-migration-copy/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Django Model 마이그레이션 해보기</p>
+    </a>
   
 </nav>
 
@@ -1833,6 +1835,75 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1878,29 +1949,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1942,8 +1990,6 @@
     
     
     
-      
-    
   
     
     
@@ -1970,58 +2016,6 @@
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2172,19 +2166,19 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/development/">development</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/django/">Django</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/javascript/">javascript</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/python/">python</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/react/">react</a>

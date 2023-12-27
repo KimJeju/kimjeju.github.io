@@ -2,7 +2,7 @@
   
   {
     "title": "Django Model 마이그레이션 해보기",
-    "url": "/posts/django-db-migration/",
+    "url": "/posts/django-db-migration-copy/",
     "categories": "Python, Django",
     "tags": "python, Django",
     "date": "2023-12-27 00:00:00 +0900",
@@ -15,6 +15,23 @@
     
     "snippet": "Mac 환겅1.Python 설치하기      models.py 에 모델 클래스 정의  2.manage.py 가 있는 폴더에서 마이그레이션 만들기  python manage.py makemigrations {본인 앱 이름}  3. Db 와 마이그레이션 진행하기  python manage.py migrate {본인 앱 이름}        마이그레이션 시에...",
     "content": "Mac 환겅1.Python 설치하기      models.py 에 모델 클래스 정의  2.manage.py 가 있는 폴더에서 마이그레이션 만들기  python manage.py makemigrations {본인 앱 이름}  3. Db 와 마이그레이션 진행하기  python manage.py migrate {본인 앱 이름}        마이그레이션 시에 어떤 Sql 문 실행되었는지 확인하기      python manage.py sqlmigate {본인 앱 이름} { initial 된 마이그레이션 번호 }              Db 에서 마이그레이션 잘 되었는지 확인하기  "
+  },
+  
+  {
+    "title": "Django 에 App 등록하기",
+    "url": "/posts/django-app-config/",
+    "categories": "Python, Django",
+    "tags": "python, Django",
+    "date": "2023-12-27 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Mac 환겅1. manage.py startapp 을 통해 app 만들기python manage.py startapp {본인 앱 명}      명령어 실행화면    앱 생성  2.setting.py 에 앱등록하기      setting.py -&gt; installed_app 에 만든 앱 등록  3. 앱 이름 사전에 등록하기        밑줄이 쳐져있...",
+    "content": "Mac 환겅1. manage.py startapp 을 통해 app 만들기python manage.py startapp {본인 앱 명}      명령어 실행화면    앱 생성  2.setting.py 에 앱등록하기      setting.py -&gt; installed_app 에 만든 앱 등록  3. 앱 이름 사전에 등록하기        밑줄이 쳐져있는 앱 이름에 alt + enter or command + enter 를 통해 사전에 등록해주기  "
   },
   
   {
