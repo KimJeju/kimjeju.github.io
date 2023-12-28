@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-27T18:56:04+09:00</updated>
+  <updated>2023-12-28T17:15:42+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,79 @@
 
   
   <entry>
+    <title>Django Env 세팅하기</title>
+    <link href="http://localhost:4000/posts/django-env-setting/" rel="alternate" type="text/html" title="Django Env 세팅하기" />
+    <published>2023-12-28T00:00:00+09:00</published>
+  
+    <updated>2023-12-28T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/django-env-setting/</id>
+    <content src="http://localhost:4000/posts/django-env-setting/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+    <category term="Django" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      네이버 SMTP 메일 Send를 위한 Django .env 설정
+
+
+
+
+
+1. requirements.txt 를 통해 django environ 설치
+
+  
+  
+    requirements.txt 에 django-environ 을 기입하면 자동설치가 된다.
+  
+
+
+
+
+2.최상위 폴더에 .env 생성 및 config 정의
+
+  
+    최상위 폴더에 .env 생성
+      
+        
+      
+    
+    .env 내부에 필요한 정보사항 작성 ( 필자의 경우 네이버 SMTP 정보작성 )
+  
+
+
+# env 작성시에는 띄어쓰기가 없어야함
+EMAIL_HOST=smtp.naver.com
+EMAIL_PORT=000
+EMAIL_USE_SSL=True
+EMAIL_HOST_USER=test@nav...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Django Model 마이그레이션 해보기</title>
     <link href="http://localhost:4000/posts/django-db-migration/" rel="alternate" type="text/html" title="Django Model 마이그레이션 해보기" />
     <published>2023-12-27T00:00:00+09:00</published>
   
-    <updated>2023-12-27T15:27:49+09:00</updated>
+    <updated>2023-12-27T18:56:41+09:00</updated>
   
     <id>http://localhost:4000/posts/django-db-migration/</id>
     <content src="http://localhost:4000/posts/django-db-migration/" />
@@ -306,68 +374,6 @@ python manage.py startapp {본인 앱 명}
       
         터미널에서 vi~/.zshrc 실행 후 아래 코드 입력
         vi 환경에서 a 를 눌러 input 환경으로 만든 후 맨 아레에 작성 후 esc 누르고 wq( 입력저장 )로 빠져나...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>리액트 프로젝트 깃허브 페이지로 배포하기</title>
-    <link href="http://localhost:4000/posts/react-deploy-github-page-copy/" rel="alternate" type="text/html" title="리액트 프로젝트 깃허브 페이지로 배포하기" />
-    <published>2023-12-17T00:00:00+09:00</published>
-  
-    <updated>2023-12-17T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/react-deploy-github-page-copy/</id>
-    <content src="http://localhost:4000/posts/react-deploy-github-page-copy/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Blog" />
-    
-    <category term="gitblog" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      리액트 프로젝트 깃 허브 페이지 배포 step
-
-
-  gh-page 라이브러리 설치하기
-  
-    
-      본인의 패키지에 맞게 아래 두 커맨드 리액트 프로젝트 폴더 cmd 에서 실행
-    
-    npm install gh-pages –save
-    yarm install gh-pages 
-
-npm install gh-pages –save 실행화면
-  
-
-
-
-
-
-  package.json 파일에 본인의 레파지토리 주소 및 npm script 추가하기
-  
-    
-      package.js 최상단의   “homepage”: “https://{본인 깃허브 이름}.github.io/{본인 레포지토리 이름}/” 작성
-
-package.json 에 깃주소 추가
-    
-    
-      scri...
     </summary>
   
 

@@ -5,13 +5,10 @@ tags : [python, Django]
 ---
 
 
-
-
 ### 1. 프로젝트 최상위 폴더에 requirements.txt 추가
 > - requirements.txt 는 Django 부트스트랩에 텍스트형식 패키지 관리 시스템이다.
 > - 프로젝트 최상위 폴더에 추가해준다.
 >> ![content image](/assets/img/23-12-27_post3/1.png){: width : "150" class="normal"}
-
 
 
 <br />      
