@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-28T17:15:42+09:00</updated>
+  <updated>2024-01-03T00:11:03+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,149 @@
   <link rel="alternate" type="text/html" hreflang="kr"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 Kimjeju </rights>
+  <rights> © 2024 Kimjeju </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>react-native run-ios 시 에러</title>
+    <link href="http://localhost:4000/posts/react-native-ios-error/" rel="alternate" type="text/html" title="react-native run-ios 시 에러" />
+    <published>2024-01-02T00:00:00+09:00</published>
+  
+    <updated>2024-01-02T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/react-native-ios-error/</id>
+    <content src="http://localhost:4000/posts/react-native-ios-error/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Dev" />
+    
+    <category term="react" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      react-native 앱 세팅 중 ios 빌드 에러발생
+
+
+
+에러코드
+
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:550BB99C-01A0-4CCD-928A-F64604A0774F, OS:16.4, name:iPhone 14 Pro }
+{ platform:iOS Simulator, id:550BB99C-01A0-4CCD-928A-F64604A0774F, OS:16.4, name:iPhone 14 Pro }
+** BUILD FAILED **
+
+
+
+
+
+
+
+
+해결
+
+  react native 프로젝트 ios 폴더에서 아래 명령어 실행
+
+
+
+cd ios
+pod i...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>react-native git ignore</title>
+    <link href="http://localhost:4000/posts/react-native-git-ignore/" rel="alternate" type="text/html" title="react-native git ignore" />
+    <published>2024-01-02T00:00:00+09:00</published>
+  
+    <updated>2024-01-02T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/react-native-git-ignore/</id>
+    <content src="http://localhost:4000/posts/react-native-git-ignore/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Dev" />
+    
+    <category term="react" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      프로젝트 최상위 폴더에 위치할 것
+
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# node.js
+#
+no...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -235,145 +374,6 @@ python manage.py startapp {본인 앱 명}
 
 
 
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Django 부트스트랩 추가해보기</title>
-    <link href="http://localhost:4000/posts/django-add-bootstrap5/" rel="alternate" type="text/html" title="Django 부트스트랩 추가해보기" />
-    <published>2023-12-27T00:00:00+09:00</published>
-  
-    <updated>2023-12-27T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/django-add-bootstrap5/</id>
-    <content src="http://localhost:4000/posts/django-add-bootstrap5/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-    <category term="Django" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      1. 프로젝트 최상위 폴더에 requirements.txt 추가
-
-  
-    requirements.txt 는 Django 부트스트랩에 텍스트형식 패키지 관리 시스템이다.
-    프로젝트 최상위 폴더에 추가해준다.
-      
-        
-      
-    
-  
-
-
-
-
-2.requirements.txt 에 bootstrap5 추가 및 인스톨
-
-  
-    requirements.txt 에 django-bootstrap5 입력
-    bootstarp5 설치
-  
-
-  
-    
-  
-
-
-
-
-3. 사용할 html 파일에 bootstrap 로드
-
-  
-    bootstrap 로드하기
-      
-        
-      
-    
-    bootstrap form 정의하기
-      
-    ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>mac 환경에 Django 세팅하기</title>
-    <link href="http://localhost:4000/posts/mac-django-setting-copy/" rel="alternate" type="text/html" title="mac 환경에 Django 세팅하기" />
-    <published>2023-12-20T00:00:00+09:00</published>
-  
-    <updated>2023-12-20T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/mac-django-setting-copy/</id>
-    <content src="http://localhost:4000/posts/mac-django-setting-copy/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-    <category term="Django" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Mac 환겅
-
-  
-    M2 맥북 에어
-    mac os Sonoma 14.2
-    python 3.9.6
-    터미널 zsh
-
-  
-
-
-
-
-1.Python 설치하기
-
-  
-    
-      pythone 설치 여부 확인
-
-    
-    깔려있지 않다면 아래 링크에서 설치하기
-      
-        python 공식 다운로드 (필자 3.9.6 설치)
-        python 공홈
-      
-    
-    python3 명령어를 python 으로 바꾸기 위해 환경변수 설정
-      
-        터미널에서 vi~/.zshrc 실행 후 아래 코드 입력
-        vi 환경에서 a 를 눌러 input 환경으로 만든 후 맨 아레에 작성 후 esc 누르고 wq( 입력저장 )로 빠져나...
     </summary>
   
 

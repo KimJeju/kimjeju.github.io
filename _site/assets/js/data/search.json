@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "react-native run-ios 시 에러",
+    "url": "/posts/react-native-ios-error/",
+    "categories": "Dev, react",
+    "tags": "python, Django",
+    "date": "2024-01-02 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "react-native 앱 세팅 중 ios 빌드 에러발생에러코드--- xcodebuild: WARNING: Using the first of multiple matching destinations:{ platform:iOS Simulator, id:550BB99C-01A0-4CCD-928A-F64604A0774F, OS:16.4, name:iPhone...",
+    "content": "react-native 앱 세팅 중 ios 빌드 에러발생에러코드--- xcodebuild: WARNING: Using the first of multiple matching destinations:{ platform:iOS Simulator, id:550BB99C-01A0-4CCD-928A-F64604A0774F, OS:16.4, name:iPhone 14 Pro }{ platform:iOS Simulator, id:550BB99C-01A0-4CCD-928A-F64604A0774F, OS:16.4, name:iPhone 14 Pro }** BUILD FAILED **해결  react native 프로젝트 ios 폴더에서 아래 명령어 실행cd iospod instsallcd ..npx react-native run-ios정상 작동"
+  },
+  
+  {
+    "title": "react-native git ignore",
+    "url": "/posts/react-native-git-ignore/",
+    "categories": "Dev, react",
+    "tags": "python, Django",
+    "date": "2024-01-02 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "프로젝트 최상위 폴더에 위치할 것# OSX#.DS_Store# Xcode#build/*.pbxuser!default.pbxuser*.mode1v3!default.mode1v3*.mode2v3!default.mode2v3*.perspectivev3!default.perspectivev3xcuserdata*.xccheckout*.moved-asideDer...",
+    "content": "프로젝트 최상위 폴더에 위치할 것# OSX#.DS_Store# Xcode#build/*.pbxuser!default.pbxuser*.mode1v3!default.mode1v3*.mode2v3!default.mode2v3*.perspectivev3!default.perspectivev3xcuserdata*.xccheckout*.moved-asideDerivedData*.hmap*.ipa*.xcuserstateios/.xcode.env.local# Android/IntelliJ#build/.idea.gradlelocal.properties*.iml*.hprof.cxx/*.keystore!debug.keystore# node.js#node_modules/npm-debug.logyarn-error.log# fastlane## It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the# screenshots whenever they are needed.# For more information about the recommended setup visit:# https://docs.fastlane.tools/best-practices/source-control/**/fastlane/report.xml**/fastlane/Preview.html**/fastlane/screenshots**/fastlane/test_output# Bundle artifact*.jsbundle# Ruby / CocoaPods/ios/Pods//vendor/bundle/# Temporary files created by Metro to check the health of the file watcher.metro-health-check*# testing/coverage"
+  },
+  
+  {
     "title": "Django Env 세팅하기",
     "url": "/posts/django-env-setting/",
     "categories": "Python, Django",
