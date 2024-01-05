@@ -42,3 +42,5 @@ npx react-native run-ios
 
 ### 정상 작동
 ![content image](/assets/img/single_source/2024_01_03.png){: width : "150" class="normal"}
+
+##
