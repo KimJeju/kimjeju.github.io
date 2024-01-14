@@ -103,3 +103,6 @@ tags : [os, linux ]
 > - 정상실행 확인
 > - - ![content image](/assets/img/24-01-15_post/25.png){: width="650" height="650"}
 
+
+### 참고 
+> - <a href="https://gymdev.tistory.com/">개발 짐 블로그</a>
