@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-04T15:54:05+09:00</updated>
+  <updated>2024-01-15T01:32:53+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,100 @@
 
   
   <entry>
+    <title>M2 맥북에 Utm을 사용해서 우분투 22.04 가상환경 세팅하기</title>
+    <link href="http://localhost:4000/posts/m2-mac-setting-ubuntu-use-utm/" rel="alternate" type="text/html" title="M2 맥북에 Utm을 사용해서 우분투 22.04 가상환경 세팅하기" />
+    <published>2024-01-15T00:00:00+09:00</published>
+  
+    <updated>2024-01-15T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/m2-mac-setting-ubuntu-use-utm/</id>
+    <content src="http://localhost:4000/posts/m2-mac-setting-ubuntu-use-utm/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Dev" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1. 우분투 다운받기
+
+
+  우분투 ios 다운로드
+  
+    다운로드 받은 후 본인이 찾기 편한 폴더로 이동 시켜놓기
+
+  
+
+
+
+
+
+
+2. 가상환경 머신 UTM 다운받기
+
+  UTM 다운로드
+  
+    받은 후 설치 및 실행 시키기
+    
+  
+
+
+
+
+3. 가상머신에서 우분투 ios 세팅하기
+
+  
+    UTM 실행 및 새 가상환경 만들기 클릭
+    
+      
+        
+      
+    
+    버추얼라이즈 선택
+    
+      
+        
+      
+    
+    Os 리눅스 선택
+    
+      
+        
+      
+    
+    boot ios image 에서 탐색 눌러 아까 다운받은 ios path 설정
+    
+      
+        
+ ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>react-native run-ios 시 에러</title>
-    <link href="http://localhost:4000/posts/react-native-ios-error/" rel="alternate" type="text/html" title="react-native run-ios 시 에러" />
+    <link href="http://localhost:4000/posts/react-native-ios-error-copy/" rel="alternate" type="text/html" title="react-native run-ios 시 에러" />
     <published>2024-01-02T00:00:00+09:00</published>
   
     <updated>2024-01-02T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/react-native-ios-error/</id>
-    <content src="http://localhost:4000/posts/react-native-ios-error/" />
+    <id>http://localhost:4000/posts/react-native-ios-error-copy/</id>
+    <content src="http://localhost:4000/posts/react-native-ios-error-copy/" />
     <author>
       <name>Kimjeju</name>
     </author>
@@ -290,86 +376,6 @@ EMAIL_HOST_USER=test@nav...
     
     Db 에서 마이그레이션 잘 되었는지 확인하기
 
-  
-
-
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Django 에 App 등록하기</title>
-    <link href="http://localhost:4000/posts/django-app-config/" rel="alternate" type="text/html" title="Django 에 App 등록하기" />
-    <published>2023-12-27T00:00:00+09:00</published>
-  
-    <updated>2023-12-27T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/django-app-config/</id>
-    <content src="http://localhost:4000/posts/django-app-config/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Python" />
-    
-    <category term="Django" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Mac 환겅
-
-1. manage.py startapp 을 통해 app 만들기
-
-
-
-
-
-python manage.py startapp {본인 앱 명}
-
-
-
-  
-    
-명령어 실행화면
-    
-앱 생성
-  
-
-
-
-
-
-
-
-
-2.setting.py 에 앱등록하기
-
-
-  
-    setting.py -&amp;gt; installed_app 에 만든 앱 등록
-  
-
-
-
-
-3. 앱 이름 사전에 등록하기
-
-  
-  
-    밑줄이 쳐져있는 앱 이름에 alt + enter or command + enter 를 통해 사전에 등록해주기
   
 
 
