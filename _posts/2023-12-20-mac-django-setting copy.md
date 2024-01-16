@@ -1,6 +1,6 @@
 ---
 title : "mac 환경에 Django 세팅하기"
-categories : [Python, Django]
+categories : [Dev, Django]
 tags : [python, Django]
 ---
 

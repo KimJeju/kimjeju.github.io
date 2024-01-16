@@ -1,6 +1,6 @@
 ---
 title : "Django 부트스트랩 추가해보기"
-categories : [Python, Django]
+categories : [Dev, Django]
 tags : [python, Django]
 ---
 

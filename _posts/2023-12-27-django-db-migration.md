@@ -1,6 +1,6 @@
 ---
 title : "Django Model 마이그레이션 해보기"
-categories : [Python, Django]
+categories : [Dev, Django]
 tags : [python, Django]
 ---
 

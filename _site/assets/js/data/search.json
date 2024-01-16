@@ -71,7 +71,7 @@
   {
     "title": "Django Env 세팅하기",
     "url": "/posts/django-env-setting/",
-    "categories": "Python, Django",
+    "categories": "Dev, Django",
     "tags": "python, Django",
     "date": "2023-12-28 00:00:00 +0900",
     
@@ -88,7 +88,7 @@
   {
     "title": "Django Model 마이그레이션 해보기",
     "url": "/posts/django-db-migration/",
-    "categories": "Python, Django",
+    "categories": "Dev, Django",
     "tags": "python, Django",
     "date": "2023-12-27 00:00:00 +0900",
     
@@ -105,7 +105,7 @@
   {
     "title": "Django 에 App 등록하기",
     "url": "/posts/django-app-config/",
-    "categories": "Python, Django",
+    "categories": "Dev, Django",
     "tags": "python, Django",
     "date": "2023-12-27 00:00:00 +0900",
     
@@ -122,7 +122,7 @@
   {
     "title": "Django 부트스트랩 추가해보기",
     "url": "/posts/django-add-bootstrap5/",
-    "categories": "Python, Django",
+    "categories": "Dev, Django",
     "tags": "python, Django",
     "date": "2023-12-27 00:00:00 +0900",
     
@@ -139,7 +139,7 @@
   {
     "title": "mac 환경에 Django 세팅하기",
     "url": "/posts/mac-django-setting-copy/",
-    "categories": "Python, Django",
+    "categories": "Dev, Django",
     "tags": "python, Django",
     "date": "2023-12-20 00:00:00 +0900",
     

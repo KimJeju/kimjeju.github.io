@@ -1,6 +1,6 @@
 ---
 title : "Django 에 App 등록하기"
-categories : [Python, Django]
+categories : [Dev, Django]
 tags : [python, Django]
 ---
 

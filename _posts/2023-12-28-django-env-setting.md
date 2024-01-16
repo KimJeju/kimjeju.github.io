@@ -1,6 +1,6 @@
 ---
 title : "Django Env 세팅하기"
-categories : [Python, Django]
+categories : [Dev, Django]
 tags : [python, Django]
 ---
 

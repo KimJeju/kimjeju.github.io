@@ -1551,7 +1551,7 @@ xcuserdata
         </article>
       
         <article class="col">
-          <a href="/posts/django-app-config/" class="post-preview card h-100">
+          <a href="/posts/mac-django-setting-copy/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1563,14 +1563,14 @@ xcuserdata
 
 <time
   
-  data-ts="1703602800"
+  data-ts="1702998000"
   data-df="ll"
   
 >
-  Dec 27, 2023
+  Dec 20, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Django 에 App 등록하기</h4>
+              <h4 class="pt-0 my-2">mac 환경에 Django 세팅하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1581,36 +1581,27 @@ xcuserdata
 
                   Mac 환겅
 
-1. manage.py startapp 을 통해 app 만들기
+  
+    M2 맥북 에어
+    mac os Sonoma 14.2
+    python 3.9.6
+    터미널 zsh
+
+  
 
 
 
 
-
-python manage.py startapp {본인 앱 명}
-
-
+1.Python 설치하기
 
   
     
-명령어 실행화면
+      pythone 설치 여부 확인
+
     
-앱 생성
-  
-
-
-
-
-
-
-
-
-2.setting.py 에 앱등록하기
-
-
-  
-    setting.py -&amp;gt; installed_app 에 만든 앱 등록
-  ...
+    깔려있지 않다면 아래 링크에서 설치하기
+      
+        python 공식 다운로드 (필자 3...
                 </p>
               </div>
             </div>
@@ -1618,7 +1609,7 @@ python manage.py startapp {본인 앱 명}
         </article>
       
         <article class="col">
-          <a href="/posts/django-db-migration/" class="post-preview card h-100">
+          <a href="/posts/django-add-bootstrap5/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1637,7 +1628,7 @@ python manage.py startapp {본인 앱 명}
   Dec 27, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Django Model 마이그레이션 해보기</h4>
+              <h4 class="pt-0 my-2">Django 부트스트랩 추가해보기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1646,32 +1637,22 @@ python manage.py startapp {본인 앱 명}
 
 
 
-                  1.Python 설치하기
+                  1. 프로젝트 최상위 폴더에 requirements.txt 추가
 
   
-    models.py 에 모델 클래스 정의
-
-  
-
-
-
-
-
-2.manage.py 가 있는 폴더에서 마이그레이션 만들기
-
-
-
-  python manage.py makemigrations {본인 앱 이름}
+    requirements.txt 는 Django 부트스트랩에 텍스트형식 패키지 관리 시스템이다.
+    프로젝트 최상위 폴더에 추가해준다.
+      
+        
+      
+    
   
 
 
 
 
-3. Db 와 마이그레이션 진행하기
-
-
-
-  python manage.py migrate {본인 앱 이...
+2.requirements.txt 에 bootstrap5 추가 및 인스톨
+...
                 </p>
               </div>
             </div>
