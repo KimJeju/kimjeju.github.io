@@ -35,23 +35,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="404: Page not found" />
+<meta property="og:title" content="비트와 바이트, MSB, LSB" />
 <meta property="og:locale" content="kr" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/404.html" />
-<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta name="description" content="MSB (촤싱위 빌드), LSB (최하위 빌드) MSB : Most Significan Bit 라 하며 가장 왼쪽에 있는 비트이다, 숫자의 크기에 가장 큰 영향을 미친다. LSB : Least Significan Bit 라 하며 가장 오른쪽에 있는 비트이다,숫자의 가장 작은 영향을 미친다. MSB 내용 설명 설명 설명 설명 설명 설명 LSB 0 1 0 0 0 1 0 0 1" />
+<meta property="og:description" content="MSB (촤싱위 빌드), LSB (최하위 빌드) MSB : Most Significan Bit 라 하며 가장 왼쪽에 있는 비트이다, 숫자의 크기에 가장 큰 영향을 미친다. LSB : Least Significan Bit 라 하며 가장 오른쪽에 있는 비트이다,숫자의 가장 작은 영향을 미친다. MSB 내용 설명 설명 설명 설명 설명 설명 LSB 0 1 0 0 0 1 0 0 1" />
+<link rel="canonical" href="http://localhost:4000/posts/msb-lsb-byte-ordering/" />
+<meta property="og:url" content="http://localhost:4000/posts/msb-lsb-byte-ordering/" />
 <meta property="og:site_name" content="Kimjeju" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-16T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="404: Page not found" />
+<meta property="twitter:title" content="비트와 바이트, MSB, LSB" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"404: Page not found","url":"http://localhost:4000/404.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-16T00:00:00+09:00","datePublished":"2024-01-16T00:00:00+09:00","description":"MSB (촤싱위 빌드), LSB (최하위 빌드) MSB : Most Significan Bit 라 하며 가장 왼쪽에 있는 비트이다, 숫자의 크기에 가장 큰 영향을 미친다. LSB : Least Significan Bit 라 하며 가장 오른쪽에 있는 비트이다,숫자의 가장 작은 영향을 미친다. MSB 내용 설명 설명 설명 설명 설명 설명 LSB 0 1 0 0 0 1 0 0 1","headline":"비트와 바이트, MSB, LSB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/msb-lsb-byte-ordering/"},"url":"http://localhost:4000/posts/msb-lsb-byte-ordering/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>404: Page not found | Kimjeju
+  <title>비트와 바이트, MSB, LSB | Kimjeju
   </title>
 
   <!--
@@ -102,6 +103,8 @@
 
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
   
@@ -311,8 +314,10 @@
           
         
           
+        
+          
             
-              <span>404: Page not found</span>
+              <span>비트와 바이트, MSB, LSB</span>
             
 
           
@@ -326,7 +331,7 @@
     </button>
 
     <div id="topbar-title">
-      404: Page not found
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -400,6 +405,38 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -420,23 +457,261 @@
 
 
 <article class="px-1">
+  <header>
+    <h1 data-toc-skip>비트와 바이트, MSB, LSB</h1>
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
   
-    
-    
-    <h1 class="dynamic-title">
-      404: Page not found
-    </h1>
-    <div class="content">
+  data-ts="1705330800"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jan 16, 2024
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
       
 
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+            <a href="https://github.com/Kimjeju">Kimjeju</a>
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
 
-<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="288 words"
+>
+  <em>1 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h3 id="msb-촤싱위-빌드-lsb-최하위-빌드"><span class="me-2">MSB (촤싱위 빌드), LSB (최하위 빌드)</span><a href="#msb-촤싱위-빌드-lsb-최하위-빌드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote>
+  <ul>
+    <li>MSB : Most Significan Bit 라 하며 가장 왼쪽에 있는 비트이다, 
+숫자의 크기에 가장 큰 영향을 미친다.</li>
+    <li>LSB : Least Significan Bit 라 하며 가장 오른쪽에 있는 비트이다,숫자의 가장 작은 영향을 미친다.</li>
+  </ul>
+
+  <div class="table-wrapper"><table>
+    <thead>
+      <tr>
+        <th>MSB</th>
+        <th>내용</th>
+        <th>설명</th>
+        <th>설명</th>
+        <th>설명</th>
+        <th>설명</th>
+        <th>설명</th>
+        <th>설명</th>
+        <th>LSB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table></div>
+</blockquote>
+
+<h3 id="byte-ordering-바이트-오더링"><span class="me-2">Byte Ordering (바이트 오더링)</span><a href="#byte-ordering-바이트-오더링" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote>
+  <ul>
+    <li>바이트 이상의 데이터는 메모리에 연속적으로 저장된다. 이때 각 바이트가 메모리에 정렬되는 방식을 Byte Ordering 이라 한다.
+      <blockquote>
+        <ul>
+          <li>바이트 오더링의 데이터 저장 두가지 방식</li>
+          <li>
+            <ul>
+              <li>Big Endian (빅 에디안)</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>Little Endian (리틀 에디안)</li>
+            </ul>
+          </li>
+        </ul>
+      </blockquote>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>Big Endian</p>
+  <ul>
+    <li>큰 바이트부터 낮은 주소로 저장됨</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>Little Endian</p>
+  <ul>
+    <li>작은 바이트부터 큰 주소로 저장됨</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>Byte Ordering 비트의 순서가 아닌 바이트의 순서를 고려하는 것으로, 바이트 내 비트의 순서는 동일하고 바이트의 순서만 달라진다.</p>
+</blockquote>
+
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+      <a href="/categories/computer/">Computer</a>,
+      <a href="/categories/cs/">cs</a>
+    </div>
+    
+
+    <!-- tags -->
+    
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a href="/tags/os/" class="post-tag no-text-decoration">os</a>
+      
+      <a href="/tags/cs/" class="post-tag no-text-decoration">cs</a>
+      
+    </div>
+    
+
+    <div class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      ">
+      <div class="license-wrapper">
+        
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=%EB%B9%84%ED%8A%B8%EC%99%80%20%EB%B0%94%EC%9D%B4%ED%8A%B8,%20MSB,%20LSB%20-%20Kimjeju&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmsb-lsb-byte-ordering%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%EB%B9%84%ED%8A%B8%EC%99%80%20%EB%B0%94%EC%9D%B4%ED%8A%B8,%20MSB,%20LSB%20-%20Kimjeju&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmsb-lsb-byte-ordering%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmsb-lsb-byte-ordering%2F&text=%EB%B9%84%ED%8A%B8%EC%99%80%20%EB%B0%94%EC%9D%B4%ED%8A%B8,%20MSB,%20LSB%20-%20Kimjeju" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
+</div>
 
     </div>
-  
-</article>
+    <!-- .post-tail-bottom -->
+    <script src="https://utteranc.es/client.js" repo="KimJeju/kimjeju.github.io"
+      issue-term="pathname" theme="github-dark" crossorigin="anonymous" async>
+      </script>
+  </div>
+  <!-- div.post-tail-wrapper -->
 
+</article>
 
             
           </main>
@@ -932,12 +1207,231 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/m2-mac-setting-ubuntu-use-utm/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705244400"
+  data-df="ll"
+  
+>
+  Jan 15, 2024
+</time>
+
+              <h4 class="pt-0 my-2">M2 맥북에 Utm을 사용해서 우분투 22.04 가상환경 세팅하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  1. 우분투 다운받기
+
+
+  우분투 ios 다운로드
+  
+    다운로드 받은 후 본인이 찾기 편한 폴더로 이동 시켜놓기
+
+  
+
+
+
+
+
+
+2. 가상환경 머신 UTM 다운받기
+
+  UTM 다운로드
+  
+    받은 후 설치 및 실행 시키기
+    
+  
+
+
+
+
+3. 가상머신에서 우분투 ios 세팅하기
+
+  
+    UTM 실행 및 새 가상환경 만들기 ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/m2-mac-setting-ubuntu-use-utm/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>M2 맥북에 Utm을 사용해서 우분투 22.04 가상환경 세팅하기</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+  
+  <!-- https://utteranc.es/ -->
+<script
+  src="https://utteranc.es/client.js"
+  repo="KimJeju/KimJeju.github.io"
+  issue-term="pathname"
+  crossorigin="anonymous"
+  async
+></script>
+
+<script type="text/javascript">
+  (function () {
+    const origin = 'https://utteranc.es';
+    const iframe = 'iframe.utterances-frame';
+    const lightTheme = 'github-light';
+    const darkTheme = 'github-dark';
+    let initTheme = lightTheme;
+    const html = document.documentElement;
+
+    if (
+      (html.hasAttribute('data-mode') && html.getAttribute('data-mode') === 'dark') ||
+      (!html.hasAttribute('data-mode') && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      initTheme = darkTheme;
+    }
+
+    addEventListener('message', (event) => {
+      let theme;
+
+      /* credit to <https://github.com/utterance/utterances/issues/170#issuecomment-594036347> */
+      if (event.origin === origin) {
+        /* page initial */
+        theme = initTheme;
+      } else if (event.source === window && event.data && event.data.direction === ModeToggle.ID) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        theme = mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme;
+      } else {
+        return;
+      }
+
+      const message = {
+        type: 'set-theme',
+        theme: theme
+      };
+
+      const utterances = document.querySelector(iframe).contentWindow;
+      utterances.postMessage(message, origin);
+    });
+  })();
+</script>
+
+
+
             
 
             <!-- The Footer -->
@@ -1518,16 +2012,51 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/kr.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/page.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
