@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Kimjeju # the main title
 
-tagline: Server & Data engineDeveloper  # it will display as the sub-title
+tagline: 취미가 공부  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -32,7 +32,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Kimjeju
-  email: overrainbow0315@gmail.com # change to your email address
+  email: h.hwi9367@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/Kimjeju # change to your github homepage
