@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-19T15:21:20+09:00</updated>
+  <updated>2024-01-19T15:39:54+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,83 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>드림핵 64se64 문제 풀이</title>
+    <link href="http://localhost:4000/posts/dreamhack-base64/" rel="alternate" type="text/html" title="드림핵 64se64 문제 풀이" />
+    <published>2024-01-19T00:00:00+09:00</published>
+  
+    <updated>2024-01-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/dreamhack-base64/</id>
+    <content src="http://localhost:4000/posts/dreamhack-base64/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Dev" />
+    
+    <category term="hacking" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Description
+
+  문제내용 : welcome 을 출력하는 html 페이지 소스를 분석하여 CTF 를 파악한다.
+
+
+풀이
+
+
+1. 문제 페이지에서 접속 vm 서버 생성하여 html 페이지 접근하기
+
+  
+    웹해킹 문제라 http// 로 접근할 수 있다.
+
+  
+
+
+
+
+2. 문제 페이지에서 소스 보기를 통해 html 구조확인하기
+
+  
+    html 페이지에서 오른쪽 클릭 소스보기를 클릭한다.
+
+    input 창에 있는 인코딩문자열을 모두 복사한다.
+
+  
+
+
+
+
+3. 복사한 base64 코드 decoding 하기
+
+  
+    복사한 암호코드를 base64 decoding 사이트에서 decoding 한다.
+
+base 64 decoding 사이트
+  
+
+
+
+
+4. decoding 해서 ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -305,74 +382,6 @@ local.properties
 # node.js
 #
 no...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Django Env 세팅하기</title>
-    <link href="http://localhost:4000/posts/django-env-setting/" rel="alternate" type="text/html" title="Django Env 세팅하기" />
-    <published>2023-12-28T00:00:00+09:00</published>
-  
-    <updated>2024-01-16T23:45:29+09:00</updated>
-  
-    <id>http://localhost:4000/posts/django-env-setting/</id>
-    <content src="http://localhost:4000/posts/django-env-setting/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="Django" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      네이버 SMTP 메일 Send를 위한 Django .env 설정
-
-
-
-
-
-1. requirements.txt 를 통해 django environ 설치
-
-  
-  
-    requirements.txt 에 django-environ 을 기입하면 자동설치가 된다.
-  
-
-
-
-
-2.최상위 폴더에 .env 생성 및 config 정의
-
-  
-    최상위 폴더에 .env 생성
-      
-        
-      
-    
-    .env 내부에 필요한 정보사항 작성 ( 필자의 경우 네이버 SMTP 정보작성 )
-  
-
-
-# env 작성시에는 띄어쓰기가 없어야함
-EMAIL_HOST=smtp.naver.com
-EMAIL_PORT=000
-EMAIL_USE_SSL=True
-EMAIL_HOST_USER=test@nav...
     </summary>
   
 
