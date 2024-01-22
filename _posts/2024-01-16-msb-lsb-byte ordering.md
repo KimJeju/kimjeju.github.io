@@ -1,7 +1,7 @@
 ---
 title : "비트와 바이트, MSB, LSB"
 categories : [Computer, cs]
-tags : [os, cs ]
+tags : [os, cs]
 ---
 
 

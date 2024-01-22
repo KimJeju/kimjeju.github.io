@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kimjeju</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-20T00:37:50+09:00</updated>
+  <updated>2024-01-22T17:30:52+09:00</updated>
   <author>
     <name>Kimjeju</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,70 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>드림핵 Baby Linux 풀이</title>
+    <link href="http://localhost:4000/posts/dreamhack-baby_linux/" rel="alternate" type="text/html" title="드림핵 Baby Linux 풀이" />
+    <published>2024-01-22T00:00:00+09:00</published>
+  
+    <updated>2024-01-22T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/dreamhack-baby_linux/</id>
+    <content src="http://localhost:4000/posts/dreamhack-baby_linux/" />
+    <author>
+      <name>Kimjeju</name>
+    </author>
+
+  
+    
+    <category term="Dev" />
+    
+    <category term="hacking" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Description
+
+  
+    문제내용 : 제공된 html 페이지 및 소스코드를 분석해 옳바른 명령어를 수행해 flag.txt 의 경로 및 flag를 찾아낸다.
+    풀이법 : 재공된 html 페이지의 input을 linux 서버의 input 창이라 생각하고 명령어를 수행한다
+      
+        
+          참고 : $() 구조는 소괄호 안에 서술한 스크립트 명령어에 대한 output을 return 한다
+        
+      
+    
+  
+
+
+풀이
+
+
+1. 문제 페이지에서 접속 vm 서버 생성하여 html 페이지 접근하기
+
+  
+
+
+
+
+2. pwd 및 ls 명령어를 통해서 구조 분석하기
+
+  
+    “pwd” 명령어를 입력하여 현재 내 위치를 파악한다.
+    “ls” 명...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -305,83 +369,6 @@ base 64 decoding 사이트
 
 cd ios
 pod i...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>react-native git ignore</title>
-    <link href="http://localhost:4000/posts/react-native-git-ignore/" rel="alternate" type="text/html" title="react-native git ignore" />
-    <published>2024-01-02T00:00:00+09:00</published>
-  
-    <updated>2024-01-02T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/react-native-git-ignore/</id>
-    <content src="http://localhost:4000/posts/react-native-git-ignore/" />
-    <author>
-      <name>Kimjeju</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="react" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      프로젝트 최상위 폴더에 위치할 것
-
-
-# OSX
-#
-.DS_Store
-
-# Xcode
-#
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
-ios/.xcode.env.local
-
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
-*.iml
-*.hprof
-.cxx/
-*.keystore
-!debug.keystore
-
-# node.js
-#
-no...
     </summary>
   
 
